@@ -1,0 +1,237 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  main {
+    margin: 0 auto;}
+  
+  .box {
+    width:1300px;
+    height: 110px;
+    padding: 1px;
+    border: 3px solid black;
+    display: flex;
+    background-color: #e0eeea;
+  }
+  
+  .colors {
+    margin-bottom: 3px;
+    margin-left: 30px;
+    grid-template-columns: repeat(10, 1fr);
+    display: grid;
+    text-align:center; 
+    background-color: whitesmoke;
+  }
+  
+  .shapes {
+    margin-bottom: 1px;
+    margin-left: 30px;
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr);
+    background-color:whitesmoke ;
+    cursor: pointer; 
+  }
+
+  .shapes button{ 
+    border: 1px solid white black;
+    border-radius: 7px;
+    font-size:x-large;
+    font-weight: bold;
+    margin-left: 3px; 
+    height: 32px;
+    background-color: white;
+    cursor: pointer;
+    }
+
+  .colors button {
+    display: inline-block;
+    border: 1px solid white black;
+    border-radius: 4px;
+    outline: none;
+    width: 22px;
+    height: 22px;
+    margin-left: 2px;
+    cursor: pointer;
+  }
+  
+  .colors button:nth-of-type(1) {
+    background-color: #000000;}
+  
+  .colors button:nth-of-type(2) {
+    background-color: #646262;}
+
+  .colors button:nth-of-type(3) {
+    background-color: #5f0808;}
+  
+  .colors button:nth-of-type(4) {
+    background-color: #f00000;}
+  
+  .colors button:nth-of-type(5) {
+    background-color: #ff9933;}
+
+  .colors button:nth-of-type(6) {
+    background-color: #ffff00;}
+
+  .colors button:nth-of-type(7) {
+    background-color: #048804;}
+ 
+    .colors button:nth-of-type(8) {
+    background-color: #009fff;}
+  
+  .colors button:nth-of-type(9) {
+    background-color: #0167a7;}
+
+  .colors button:nth-of-type(10) {
+    background-color: #cc66cc;}
+  
+  .colors button:nth-of-type(11) {
+    background-color: #ffffff;}
+  
+  .colors button:nth-of-type(12) {
+    background-color: #c9c6c6;}
+  
+  .colors button:nth-of-type(13) {
+    background-color: #c27629;}
+
+  .colors button:nth-of-type(14) {
+    background-color: #f0a8d8;}
+
+  .colors button:nth-of-type(15) {
+    background-color: #fdce35;}
+
+  .colors button:nth-of-type(16) {
+    background-color: #fdefd6;}
+  
+  .colors button:nth-of-type(17) {
+    background-color: #92ec56;}
+  
+  .colors button:nth-of-type(18) {
+    background-color: #0fffff;}
+ 
+  .colors button:nth-of-type(19) {
+    background-color: #66afcc;}
+
+  .colors button:nth-of-type(20) {
+    background-color: #d1bcca;}
+  
+  .size  {
+    padding-top: 5px}
+  
+  .size button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 0;
+    background-color: #e3e2ee;
+    margin-bottom: 5px;
+    padding:  5px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .size button:after {
+    height: 1px;
+    display: block;
+    background: #808080;
+    content: '';
+  }
+  
+  .size button:nth-of-type(1):after {
+    height: 1px;
+  }
+  
+  .size button:nth-of-type(2):after {
+    height: 2px;
+  }
+  
+  .size button:nth-of-type(3):after {
+    height: 3px;
+  }
+  
+  .size button:nth-of-type(4):after {
+    height: 4px;
+  }
+  
+  .size button:nth-of-type(5):after {
+    height: 5px;
+  }
+  
+  .buttons {
+    margin-right: 5px;
+    background-color:  whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+
+  .buttons button{
+  border-radius: 7px;
+  cursor: pointer;
+  font-size:large;
+  margin-left: 2px; 
+  font-weight: bold;
+}
+
+.buttons button:hover {
+  background-color:#d6f1f1 ;
+}
+
+.shapes button:hover {
+  background-color: #d6f1f1 ;  
+}
+
+
+.colors button:hover {
+  background-color:#dfdfd9 ;
+}
+    
+.dropbtn {
+    background-color: white;
+    border-radius: 7px;
+    color:black;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block; }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+  
+.dropdown-content a {
+    color: black;
+    padding: 4px 10px;
+    display: block; }
+  
+.dropdown-content a:hover {background-color:#d6f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color:rgb(248, 247, 247);}
+  
+.dropdown:hover .dropbtn {
+    background-color:#d6f1f1;}
+
+ 
+#paint-canvas {
+    cursor:crosshair;}
+
+.drawing-block {
+    width:1300px;
+    height: 1000px;
+    margin-top: 5px;
+    border: 3px solid black;
+    background-color: white;
+    display: flex;  
+}
